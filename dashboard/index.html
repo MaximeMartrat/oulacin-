@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c68e41c693.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <title>OulaCiné</title>
+  </head>
+  <body>
+    <h1><i class="fa-solid fa-square-phone"></i> OULA CINE</h1>
+    <div id="div_container">
+      <div id="get_all_container">
+        <h2>TOUS LES FILMS</h2>
+        <br />
+        <div id="all_movies"></div>
+        <br />
+        <button class="get_all_movie_button" value="action">Action</button>
+        <button class="get_all_movie_button" value="western">Western</button>
+        <button class="get_all_movie_button" value="drame">Drame</button>
+        <button class="get_all_movie_button" value="comedie">Comedie</button>
+        <button class="get_all_movie_button" value="sf">Science Fiction</button>
+        <button class="get_all_movie_button" value="thriller">Thriller</button>
+      </div>
+      <div id="get_delete_container">
+        <h2>SELECTION OU EFFACER</h2>
+        <br />
+        <label for="my_movie_id">N°</label><br />
+        <input type="number" id="get_movies" /><br />
+        <div id="movies_id"></div>
+        <br />
+        <button id="get_movie_by_id">Afficher</button>
+        <button id="delete_the_movie">Effacer</button>
+      </div>
+      <div id="post_container">
+        <h2>AJOUTER</h2>
+        <br />
+        <label for="titre">Titre</label><br />
+        <input type="text" id="create_movie" /><br />
+        <label for="annee">Année</label><br />
+        <input type="text" id="year_movie" />
+        <br /><br />
+        <button id="create_button">ok</button>
+      </div>
+      <div id="update_container">
+        <h2>MODIFIER</h2><br>
+        <label for="modif_movie_id">N°</label><br />
+        <input type="number" id="get_modif_movies" /><br />
+        <label for="titre">Titre</label><br />
+        <input type="text" id="modif_title_movie" /><br />
+        <label for="annee">Année</label><br />
+        <input type="text" id="modif_year_movie" />
+        <br /><br />
+        <button id="update_button">ok</button>
+      </div>
+    </div>
+  </body>
+</html>

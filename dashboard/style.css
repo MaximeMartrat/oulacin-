@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    font-family: 'Della Respira', serif;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+    background-color: #F2F2F2;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+th, td{
+    border: 1px solid #d1cece;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+}
+th{
+    background-color: #FECC00;
+}
+h1{
+    grid-row: 1;
+    width:100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FECC00;
+}
+#div_container{
+    height: 80%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 50% 50%;
+}
+#get_all_container{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    text-align: center;
+}
+#get_delete_container{
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#post_container{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#update_container{
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: -30px;
+    border-bottom: 3px solid #FECC00;
+}
+input{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #d1cece;
+    outline: none;
+}
+
+#get_movies, #get_modif_movies{
+    width:70px;
+}
+button{
+    padding: 10px;
+    width:40%;
+    border-radius: 5px;
+    background-color: #FECC00;
+    border: #FECC00;
+}
+button:hover{
+    background-color: #F39C12;
+    border:#F39C12;
+}
+.get_all_movie_button{
+    margin-bottom:2px;
+    margin-right:-1px;
+    margin-left: -1px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+    #div_container{
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 80% 70% 60% 60% ;
+    }
+    #get_all_container{
+        grid-column: 1;
+        grid-row: 2;
+        box-sizing: border-box;
+        border-bottom: 3px solid #FECC00;
+        overflow: scroll;
+    }
+
+    #get_delete_container{
+        grid-column: 1;
+        grid-row: 3;
+        box-sizing: border-box;
+        border-bottom: 3px solid #FECC00;
+        margin-top: 90px;
+    }
+    #update_container{
+        grid-column:1;
+        grid-row: 4;
+        box-sizing: border-box;
+    }
+    #post_container{
+        grid-column: 1;
+        grid-row: 5;
+        box-sizing: border-box;
+    }
+    }
